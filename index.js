@@ -67,3 +67,15 @@ const stringToNumber = function (str) {
 	return d;
 };
 console.log(stringToNumber('4'));
+
+//! return an array of the first n multiples of x
+function countBy(x, n) {
+	var z = [];
+	for (let i = 1; i <= n; i++) {
+		z.push(x * i);
+	}
+
+	return z;
+}
+
+console.log(countBy(2, 5));
