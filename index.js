@@ -191,6 +191,9 @@ function paperwork(n, m) {
 	}
 }
 
+
+//! Given the triangle of consecutive odd numbers:
+
 function rowSumOddNumbers(n) {
 	return n * n * n;
 }
