@@ -233,3 +233,13 @@ function numberToString(num) {
 }
 
 console.log(numberToString(-100));
+
+//! A square of squares
+
+const isSquare = function (n) {
+	if (Math.sqrt(n) % 1 === 0) {
+		return true;
+	} else { return false; }
+};
+
+console.log(isSquare(0));
