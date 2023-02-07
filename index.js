@@ -190,3 +190,7 @@ function paperwork(n, m) {
 		return n * m;
 	}
 }
+
+function rowSumOddNumbers(n) {
+	return n * n * n;
+}
