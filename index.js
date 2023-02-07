@@ -58,3 +58,12 @@ function positiveSum(arr) {
 	return sum;
 }
 console.log(positiveSum(arr));
+
+
+//! Convert a Number to a String!
+const stringToNumber = function (str) {
+	let d = Number(str);
+	// put your code here
+	return d;
+};
+console.log(stringToNumber('4'));
