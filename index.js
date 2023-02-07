@@ -225,3 +225,11 @@ function litres(time) {
 }
 
 console.log(litres(3));
+
+//! number to string
+
+function numberToString(num) {
+	return String(num);
+}
+
+console.log(numberToString(-100));
