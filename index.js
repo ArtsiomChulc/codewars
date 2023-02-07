@@ -131,3 +131,15 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 
 console.log(zeroFuel(60, 25, 3));
+
+
+//! Each positive becomes negatives, and the negatives become positives.
+
+const arr2 = [2, 4, 3, 6, 4, 0];
+function invert(array) {
+	return array.map(num => {
+		return num * -1;
+	});
+}
+
+console.log(invert(arr2));
