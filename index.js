@@ -178,3 +178,15 @@ function points(games) {
 }
 
 console.log(points(footballArr));
+
+
+
+//! Your classmates asked you to copy some paperwork for them. 
+
+function paperwork(n, m) {
+	if (n < 0 || m < 0) {
+		return 0;
+	} else {
+		return n * m;
+	}
+}
