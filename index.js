@@ -158,3 +158,23 @@ function century(year) {
 }
 
 console.log(century(1234));
+
+
+//! Our football team has finished the championship........
+const footballArr = ["3:1", "2:2", "0:1", "2:3", "3:2", "2:2"];
+
+
+function points(games) {
+	let res = 0;
+	for (let i = 0; i < games.length; i++) {
+		if (games[i][0] > games[i][2]) {
+			res += 3;
+		}
+		if (games[i][0] == games[i][2]) {
+			res += 1;
+		}
+	}
+	return +res;
+}
+
+console.log(points(footballArr));
