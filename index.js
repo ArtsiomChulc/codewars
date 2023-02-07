@@ -79,3 +79,13 @@ function countBy(x, n) {
 }
 
 console.log(countBy(2, 5));
+
+
+//! Simple, remove the spaces from the string, then return the resultant string.
+
+function noSpace(x) {
+	let str = x.replaceAll(' ', '');
+	return str;
+}
+
+console.log(noSpace(' kdj hhh h h '));
