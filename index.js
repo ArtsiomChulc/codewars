@@ -89,3 +89,21 @@ function noSpace(x) {
 }
 
 console.log(noSpace(' kdj hhh h h '));
+
+
+//! Build a function that returns an array of integers from n to 1 where n > 0.
+
+const reverseSeq = n => {
+	let arr = [];
+	if (n <= 0) {
+		return;
+	} else {
+		for (let i = 0; i < n; i++) {
+			let a = n - i;
+			arr.push(a);
+		}
+	}
+	return arr;
+};
+
+console.log(reverseSeq(4));
