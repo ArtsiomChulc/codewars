@@ -107,3 +107,13 @@ const reverseSeq = n => {
 };
 
 console.log(reverseSeq(4));
+
+
+//! Write a function which converts the input string to uppercase.
+
+function makeUpperCase(str) {
+	return str.toUpperCase();
+	// Code here
+}
+
+console.log(makeUpperCase("fo do su"));
