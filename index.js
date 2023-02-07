@@ -143,3 +143,18 @@ function invert(array) {
 }
 
 console.log(invert(arr2));
+
+
+//! Given a year, return the century it is in.
+
+function century(year) {
+
+	let centuryCount = 0;
+	while (year > 0) {
+		year = year - 100;
+		centuryCount = centuryCount + 1;
+	}
+	return centuryCount;
+}
+
+console.log(century(1234));
