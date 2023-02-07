@@ -215,3 +215,13 @@ function basicOp(operation, value1, value2) {
 }
 
 console.log(basicOp('-', 5, 5));
+
+
+//! Nathan loves cycling.
+
+function litres(time) {
+	let litresInHour = 0.5;
+	return Math.floor(time * litresInHour);
+}
+
+console.log(litres(3));
