@@ -117,3 +117,17 @@ function makeUpperCase(str) {
 }
 
 console.log(makeUpperCase("fo do su"));
+
+
+//! write a function that tells you if it is possible to get to the pump or not
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+	let distance = fuelLeft * mpg;
+	if (distance >= distanceToPump) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
+console.log(zeroFuel(60, 25, 3));
