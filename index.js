@@ -24,3 +24,16 @@ function booleanToString(b) {
 }
 
 console.log(booleanToString(true));
+
+
+function betterThanAverage(classPoints, yourPoints) {
+	let average = classPoints.reduce((a, b) => a + b) / classPoints.length;
+	if (average > yourPoints) {
+		return false;
+	} else {
+		return true;
+	}
+	// Your code here
+}
+
+console.log(betterThanAverage([2, 2, 4, 2], 3));
