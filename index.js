@@ -258,3 +258,20 @@ function lovefunc(flower1, flower2) {
 }
 
 console.log(lovefunc(2, 2));
+
+
+//! You might know some pretty large perfect squares. But what about the NEXT one?
+
+function findNextSquare(sq) {
+	let a = Math.sqrt(sq);
+	let b = (a + 1);
+	b *= b;
+	if (Number.isInteger(b)) {
+		return b;
+	} else {
+		return -1 + ' Wrong output for ' + sq;
+	}
+	// Return the next square if sq is a perfect square, -1 otherwise
+}
+
+console.log(findNextSquare(342786627));
