@@ -300,3 +300,23 @@ function digitize(n) {
 }
 
 console.log(digitize(1488888));
+
+
+//! Make a function that will return a greeting statement that.....
+
+function greet(name) {
+	return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet("Artsiom"));
+
+
+
+//! Make a program that filters a list of strings and returns a list...
+
+const myArr = ["Ryan", "Kieran", "Jason", "Yous", "Ryan", "Mark"];
+
+function friend(friends) {
+	return friends.filter(item => item.length === 4);
+}
+console.log(friend(myArr));
