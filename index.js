@@ -269,7 +269,7 @@ function findNextSquare(sq) {
 	if (Number.isInteger(b)) {
 		return b;
 	} else {
-		return -1 + ' Wrong output for ' + sq;
+		return -1;
 	}
 	// Return the next square if sq is a perfect square, -1 otherwise
 }
