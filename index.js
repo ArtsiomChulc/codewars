@@ -242,4 +242,19 @@ const isSquare = function (n) {
 	} else { return false; }
 };
 
-console.log(isSquare(0));
+console.log(isSquare(4));
+
+
+//! Write a function that will take the number of petals of each flower and return true.....
+
+function lovefunc(flower1, flower2) {
+	if (flower1 % 2 !== 0 && flower2 % 2 == 0) {
+		return true;
+	} else if (flower1 % 2 == 0 && flower2 % 2 !== 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log(lovefunc(2, 2));
