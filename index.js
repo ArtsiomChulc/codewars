@@ -275,3 +275,28 @@ function findNextSquare(sq) {
 }
 
 console.log(findNextSquare(342786627));
+
+
+//! Very simple, given an integer or a floating-point number, find its opposite.
+
+function opposite(number) {
+	return number * -1;
+}
+
+console.log(opposite(4));
+
+
+//! Convert number to reversed array of digits
+
+function digitize(n) {
+	const arr = [];
+	if (n < 0) {
+		return;
+	} else {
+		let str = String(n);
+
+		return str.split('').map(Number).reverse();
+	}
+}
+
+console.log(digitize(1488888));
