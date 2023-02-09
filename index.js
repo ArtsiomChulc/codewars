@@ -369,17 +369,34 @@ function XO(str) {
 
 //! Given an array of integers your solution should find the smallest integer.
 
+// const numArray = [2, 1, 0, 44, -2, 4, -23, 8, 9, -40];
+
+
+// function findSmallestInt(args) {
+// 	let smallArrg = args[0];
+// 	for (let i = 0; i < args.length; i++) {
+// 		if (args[i] < smallArrg) {
+// 			smallArrg = args[i];
+// 		}
+// 	}
+// 	return smallArrg;
+// }
+// console.log(findSmallestInt(numArray));
+
+
+//! Given an array of integers.
 const numArray = [2, 1, 0, 44, -2, 4, -23, 8, 9, -40];
-
-
-function findSmallestInt(args) {
-	let smallArrg = args[0];
-	for (let i = 0; i < args.length; i++) {
-		if (args[i] < smallArrg) {
-			smallArrg = args[i];
-		}
+function countPositivesSumNegatives(input) {
+	if (input && input.length) {
+		let positiveSum = 0;
+		let negativeSum = 0;
+		input.forEach(num => num > 0 ? positiveSum++ : negativeSum += num);
+		return [positiveSum, negativeSum];
+	} else {
+		return [];
 	}
-	return smallArrg;
 }
-console.log(findSmallestInt(numArray));
+
+
+console.log(countPositivesSumNegatives(numArray));
 
