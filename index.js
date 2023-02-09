@@ -320,3 +320,15 @@ function friend(friends) {
 	return friends.filter(item => item.length === 4);
 }
 console.log(friend(myArr));
+
+
+//! In a factory a printer prints labels for boxes. 
+
+const printerError = word => {
+	const invalidCharacters = [...word]
+		.map(word => word.charCodeAt(0))
+		.filter(
+			charCode => charCode < 97 || charCode > 109
+		);
+	return `${invalidCharacters.length}/${word.length}`;
+};
