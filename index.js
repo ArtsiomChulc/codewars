@@ -433,3 +433,30 @@ function disemvowel(str) {
 }
 
 console.log(disemvowel(string));
+
+
+//! Create a function that takes an integer as an argument
+
+function evenOrOdd(number) {
+	if (number % 2 == 0) {
+		return 'Even';
+	} else {
+		return 'Odd';
+	}
+}
+
+console.log(evenOrOdd(2));
+
+
+//! In this simple assignment you are given a number and have to make it negative.
+
+function makeNegative(num) {
+	// Code?
+	if (num <= 0) {
+		return num;
+	} else {
+		return num * -1;
+	}
+}
+
+console.log(makeNegative(0));
