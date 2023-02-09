@@ -385,18 +385,51 @@ function XO(str) {
 
 
 //! Given an array of integers.
-const numArray = [2, 1, 0, 44, -2, 4, -23, 8, 9, -40];
-function countPositivesSumNegatives(input) {
-	if (input && input.length) {
-		let positiveSum = 0;
-		let negativeSum = 0;
-		input.forEach(num => num > 0 ? positiveSum++ : negativeSum += num);
-		return [positiveSum, negativeSum];
-	} else {
-		return [];
-	}
+// const numArray = [2, 1, 0, 44, -2, 4, -23, 8, 9, -40];
+// function countPositivesSumNegatives(input) {
+// 	if (input && input.length) {
+// 		let positiveSum = 0;
+// 		let negativeSum = 0;
+// 		input.forEach(num => num > 0 ? positiveSum++ : negativeSum += num);
+// 		return [positiveSum, negativeSum];
+// 	} else {
+// 		return [];
+// 	}
+// }
+
+
+// console.log(countPositivesSumNegatives(numArray));
+
+
+//! Return your answer as a number.
+
+const numArray = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
+// console.log(numArray);
+function sumMix(x) {
+	const arr = [];
+	x.forEach(item => {
+		arr.push(+item);
+	});
+
+	return arr.reduce((a, b) => {
+		return a + b;
+	});
 }
 
+console.log(sumMix(numArray));
 
-console.log(countPositivesSumNegatives(numArray));
 
+//! Trolls are attacking your comment section!
+
+let string = 'Lorem ipsum dolor sit amet consectetur adipisicing.';
+function disemvowel(str) {
+	let output = "";
+	for (let i = 0; i < str.length; i++) {
+		if (!"aeiouAEIOU".includes(str[i])) {
+			output += str[i];
+		}
+	}
+	return output;
+}
+
+console.log(disemvowel(string));
