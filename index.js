@@ -344,7 +344,7 @@ function repeatStr(n, s) {
 console.log(repeatStr(3, 'sad'));
 
 
-
+//! countX == countO
 
 function XO(str) {
 	str = str.toLowerCase();
@@ -365,3 +365,21 @@ function XO(str) {
 		return false;
 	}
 }
+
+
+//! Given an array of integers your solution should find the smallest integer.
+
+const numArray = [2, 1, 0, 44, -2, 4, -23, 8, 9, -40];
+
+
+function findSmallestInt(args) {
+	let smallArrg = args[0];
+	for (let i = 0; i < args.length; i++) {
+		if (args[i] < smallArrg) {
+			smallArrg = args[i];
+		}
+	}
+	return smallArrg;
+}
+console.log(findSmallestInt(numArray));
+
