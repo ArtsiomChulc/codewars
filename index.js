@@ -332,3 +332,13 @@ const printerError = word => {
 		);
 	return `${invalidCharacters.length}/${word.length}`;
 };
+
+
+//! Write a function that accepts an integer n and a string s as parameters...
+
+function repeatStr(n, s) {
+
+	return s.repeat(n);
+}
+
+console.log(repeatStr(3, 'sad'));
