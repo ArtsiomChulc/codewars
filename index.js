@@ -460,3 +460,25 @@ function makeNegative(num) {
 }
 
 console.log(makeNegative(0));
+
+//! Write a function to split a string and convert it into an array of words.
+
+function strToArr(str) {
+	return str.split(' ');
+}
+
+console.log(strToArr('q asd nfh dkir kkkk'));
+
+
+//! The Western Suburbs Croquet Club has two categories of...
+
+const usersArr = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]];
+
+function openOrSenior(data) {
+	function sortMember(member) {
+		return (member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open';
+	}
+	return data.map(sortMember);
+}
+
+console.log(openOrSenior(usersArr));
