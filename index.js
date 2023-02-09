@@ -70,7 +70,7 @@ console.log(stringToNumber('4'));
 
 //! return an array of the first n multiples of x
 function countBy(x, n) {
-	var z = [];
+	let z = [];
 	for (let i = 1; i <= n; i++) {
 		z.push(x * i);
 	}
@@ -342,3 +342,26 @@ function repeatStr(n, s) {
 }
 
 console.log(repeatStr(3, 'sad'));
+
+
+
+
+function XO(str) {
+	str = str.toLowerCase();
+
+	let arrayOfCharacters = str.split("");
+
+	let countX = arrayOfCharacters.reduce(function (n, val) {
+		return n + (val === 'x');
+	}, 0);
+
+	let countO = arrayOfCharacters.reduce(function (n, val) {
+		return n + (val === 'o');
+	}, 0);
+
+	if (countX == countO) {
+		return true;
+	} else {
+		return false;
+	}
+}
