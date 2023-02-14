@@ -503,3 +503,32 @@ function check(a, x) {
 	}
 }
 console.log(check(array, '2'));
+
+
+//! You probably know the "like" system from Facebook...
+
+const arrName = ['Alex'];
+
+function likes(names) {
+	if (names.length == 0) {
+		return "no one likes this";
+	}
+
+	if (names.length === 1) {
+		return `${names[0]} likes this`;
+	}
+
+	if (names.length === 2) {
+		return `${names.join(' and ')} likes this`;
+	}
+
+	if (names.length === 3) {
+		return `${names.slice(0, 2).join(', ')} and ${names.slice(2)} like this`;
+	}
+
+	if (names.length > 3) {
+		return `${names.slice(0, 2).join(', ')} and ${names.length - 2} others like this`;
+	}
+}
+
+console.log(likes(arrName));
