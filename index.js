@@ -519,7 +519,7 @@ function likes(names) {
 	}
 
 	if (names.length === 2) {
-		return `${names.join(' and ')} likes this`;
+		return `${names.join(' and ')} like this`;
 	}
 
 	if (names.length === 3) {
