@@ -482,3 +482,24 @@ function openOrSenior(data) {
 }
 
 console.log(openOrSenior(usersArr));
+
+
+//! You will be given an array a and a value x.
+
+const array = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
+
+function check(a, x) {
+	// for (let i = 0; i < a.length; i++) {
+	// 	if (a[i] == x) {
+	// 		return true;
+	// 	} else {
+	// 		return false;
+	// 	}
+	// }
+	if (a.includes(x)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(check(array, '2'));
