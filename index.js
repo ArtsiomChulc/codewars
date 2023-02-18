@@ -18,7 +18,7 @@ function doubleInteger(i) {
 
 //! Implement a function which convert the given boolean value into its string representation.
 function booleanToString(b) {
-	let string = String(b);
+	const string = String(b);
 	return string;
 	//your code here
 }
@@ -532,3 +532,59 @@ function likes(names) {
 }
 
 console.log(likes(arrName));
+
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+
+function isIsogram(str){
+	let strNew = str.toLowerCase();
+	if(strNew.length === 0) {
+		return true;
+	}
+	for(let i = 0; i < strNew.length; ++i) {
+		for(let j = i + 1; j < strNew.length; ++j) {
+			if(strNew[i] == strNew[j]) {
+				return false;
+			}
+		}
+	} return true;
+}
+
+console.log(isIsogram('qwertyy'));
+
+// It's pretty straightforward. Your goal is to create a function that removes...
+
+const del = 'it-camasutra';
+
+function removeChar(str){
+	return str.slice(1, -1);
+
+};
+console.log(removeChar(del));
+
+// Build Tower
+
+function towerBuilder(nFloors) {
+	// build here
+	let space, star, tower = [];
+	for(let i = 1; i <= nFloors; i++){
+		space = " ".repeat(nFloors - i);
+		star  = "*".repeat((2*i) - 1);
+		tower.push(`${space}${star}${space}`);
+	}
+	return tower
+}
+
+console.log(towerBuilder(3));
+
+// When writing on Twitter, he is known for almost always capitalizing every word.
+
+String.prototype.toJadenCase = function () {
+	function bigFirstLetter(str) {
+		return str.charAt(0).toUpperCase() + str.slice(1);
+	}
+	return this.split(' ').map(bigFirstLetter).join(' ');
+};
+
+console.log('asd fhf kxk'.toJadenCase());
+
+
