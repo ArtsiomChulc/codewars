@@ -1,5 +1,5 @@
 //! reverse strings function
-function solution(str) {
+/*function solution(str) {
 	let splitStr = str.split('');
 	let reverseStr = splitStr.reverse();
 	let joinStr = reverseStr.join('');
@@ -23,11 +23,11 @@ function booleanToString(b) {
 	//your code here
 }
 
-console.log(booleanToString(true));
+console.log(booleanToString(true));*/
 
 
 //! вычисление среднего значения массива 
-function betterThanAverage(classPoints, yourPoints) {
+/*function betterThanAverage(classPoints, yourPoints) {
 	let average = classPoints.reduce((a, b) => a + b) / classPoints.length;
 	if (average > yourPoints) {
 		return false;
@@ -364,7 +364,7 @@ function XO(str) {
 	} else {
 		return false;
 	}
-}
+}*/
 
 
 //! Given an array of integers your solution should find the smallest integer.
@@ -403,7 +403,7 @@ function XO(str) {
 
 //! Return your answer as a number.
 
-const numArray = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
+/*const numArray = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
 // console.log(numArray);
 function sumMix(x) {
 	const arr = [];
@@ -416,12 +416,12 @@ function sumMix(x) {
 	});
 }
 
-console.log(sumMix(numArray));
+console.log(sumMix(numArray));*/
 
 
 //! Trolls are attacking your comment section!
 
-let string = 'Lorem ipsum dolor sit amet consectetur adipisicing.';
+/*let string = 'Lorem ipsum dolor sit amet consectetur adipisicing.';
 function disemvowel(str) {
 	let output = "";
 	for (let i = 0; i < str.length; i++) {
@@ -459,132 +459,185 @@ function makeNegative(num) {
 	}
 }
 
-console.log(makeNegative(0));
+console.log(makeNegative(0));*/
 
 //! Write a function to split a string and convert it into an array of words.
 
-function strToArr(str) {
-	return str.split(' ');
+// function strToArr(str) {
+// 	return str.split(' ');
+// }
+//
+// console.log(strToArr('q asd nfh dkir kkkk'));
+//
+//
+// //! The Western Suburbs Croquet Club has two categories of...
+//
+// const usersArr = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]];
+//
+// function openOrSenior(data) {
+// 	function sortMember(member) {
+// 		return (member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open';
+// 	}
+// 	return data.map(sortMember);
+// }
+//
+// console.log(openOrSenior(usersArr));
+//
+//
+// //! You will be given an array a and a value x.
+//
+// const array = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
+//
+// function check(a, x) {
+// 	// for (let i = 0; i < a.length; i++) {
+// 	// 	if (a[i] == x) {
+// 	// 		return true;
+// 	// 	} else {
+// 	// 		return false;
+// 	// 	}
+// 	// }
+// 	if (a.includes(x)) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// console.log(check(array, '2'));
+//
+//
+// //! You probably know the "like" system from Facebook...
+//
+// const arrName = ['Alex'];
+//
+// function likes(names) {
+// 	if (names.length == 0) {
+// 		return "no one likes this";
+// 	}
+//
+// 	if (names.length === 1) {
+// 		return `${names[0]} likes this`;
+// 	}
+//
+// 	if (names.length === 2) {
+// 		return `${names.join(' and ')} like this`;
+// 	}
+//
+// 	if (names.length === 3) {
+// 		return `${names.slice(0, 2).join(', ')} and ${names.slice(2)} like this`;
+// 	}
+//
+// 	if (names.length > 3) {
+// 		return `${names.slice(0, 2).join(', ')} and ${names.length - 2} others like this`;
+// 	}
+// }
+//
+// console.log(likes(arrName));
+//
+// // An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+//
+// function isIsogram(str) {
+// 	let strNew = str.toLowerCase();
+// 	if (strNew.length === 0) {
+// 		return true;
+// 	}
+// 	for (let i = 0; i < strNew.length; ++i) {
+// 		for (let j = i + 1; j < strNew.length; ++j) {
+// 			if (strNew[i] == strNew[j]) {
+// 				return false;
+// 			}
+// 		}
+// 	} return true;
+// }
+//
+// console.log(isIsogram('qwertyy'));
+//
+// // It's pretty straightforward. Your goal is to create a function that removes...
+//
+// const del = 'it-camasutra';
+//
+// function removeChar(str) {
+// 	return str.slice(1, -1);
+//
+// };
+// console.log(removeChar(del));
+//
+// // Build Tower
+//
+// function towerBuilder(nFloors) {
+// 	// build here
+// 	let space, star, tower = [];
+// 	for (let i = 1; i <= nFloors; i++) {
+// 		space = " ".repeat(nFloors - i);
+// 		star = "*".repeat((2 * i) - 1);
+// 		tower.push(`${space}${star}${space}`);
+// 	}
+// 	return tower
+// }
+//
+// console.log(towerBuilder(3));
+//
+// // When writing on Twitter, he is known for almost always capitalizing every word.
+//
+// String.prototype.toJadenCase = function () {
+// 	function bigFirstLetter(str) {
+// 		return str.charAt(0).toUpperCase() + str.slice(1);
+// 	}
+// 	return this.split(' ').map(bigFirstLetter).join(' ');
+// };
+//
+// console.log('asd fhf kxk'.toJadenCase());
+//
+// function fibanachi(n) {
+// 	let arrFib = [];
+//
+// 	let prev = 0,
+// 		next = 1;
+// 	for (let i = 0; i < n; i++) {
+// 		let temp = next;
+// 		next = prev + next;
+// 		prev = temp;
+// 		arrFib.push(next);
+// 	}
+// 	console.log(arrFib);
+// 	return prev;
+// }
+// console.log(fibanachi(5));
+
+// The goal is to create a function of two inputs number and power, that "raises" ...
+
+function numberToPower(number, power){
+	console.info(Math.log2(1024));
+	// Code here
+	let a = 1;
+	for (let i = 0; i < power; i++) {
+		 a *= number;
+	}
+	console.log(a);
 }
 
-console.log(strToArr('q asd nfh dkir kkkk'));
+numberToPower(10, 6);
+
+// Sentence Smash...
 
 
-//! The Western Suburbs Croquet Club has two categories of...
+const wordsArr = ['to', 'be', 'or', 'not', 'to', 'be'];
 
-const usersArr = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]];
-
-function openOrSenior(data) {
-	function sortMember(member) {
-		return (member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open';
-	}
-	return data.map(sortMember);
-}
-
-console.log(openOrSenior(usersArr));
-
-
-//! You will be given an array a and a value x.
-
-const array = ['2', 1, 0, '44', 2, 4, 23, '8', 9, '40'];
-
-function check(a, x) {
-	// for (let i = 0; i < a.length; i++) {
-	// 	if (a[i] == x) {
-	// 		return true;
-	// 	} else {
-	// 		return false;
-	// 	}
-	// }
-	if (a.includes(x)) {
-		return true;
-	} else {
-		return false;
-	}
-}
-console.log(check(array, '2'));
-
-
-//! You probably know the "like" system from Facebook...
-
-const arrName = ['Alex'];
-
-function likes(names) {
-	if (names.length == 0) {
-		return "no one likes this";
-	}
-
-	if (names.length === 1) {
-		return `${names[0]} likes this`;
-	}
-
-	if (names.length === 2) {
-		return `${names.join(' and ')} like this`;
-	}
-
-	if (names.length === 3) {
-		return `${names.slice(0, 2).join(', ')} and ${names.slice(2)} like this`;
-	}
-
-	if (names.length > 3) {
-		return `${names.slice(0, 2).join(', ')} and ${names.length - 2} others like this`;
-	}
-}
-
-console.log(likes(arrName));
-
-// An isogram is a word that has no repeating letters, consecutive or non-consecutive.
-
-function isIsogram(str){
-	let strNew = str.toLowerCase();
-	if(strNew.length === 0) {
-		return true;
-	}
-	for(let i = 0; i < strNew.length; ++i) {
-		for(let j = i + 1; j < strNew.length; ++j) {
-			if(strNew[i] == strNew[j]) {
-				return false;
-			}
-		}
-	} return true;
-}
-
-console.log(isIsogram('qwertyy'));
-
-// It's pretty straightforward. Your goal is to create a function that removes...
-
-const del = 'it-camasutra';
-
-function removeChar(str){
-	return str.slice(1, -1);
-
+function smash (words) {
+	return words.join(' ').trim();
 };
-console.log(removeChar(del));
 
-// Build Tower
+console.log(smash(wordsArr));
 
-function towerBuilder(nFloors) {
-	// build here
-	let space, star, tower = [];
-	for(let i = 1; i <= nFloors; i++){
-		space = " ".repeat(nFloors - i);
-		star  = "*".repeat((2*i) - 1);
-		tower.push(`${space}${star}${space}`);
+//You're writing code to control your town's traffic lights..
+
+function updateLight(current) {
+	if(current === 'red') {
+		return 'green';
+	} else if(current === 'green') {
+		return 'yellow';
+	} else if(current === 'yellow' || 'green') {
+		return 'red';
 	}
-	return tower
 }
 
-console.log(towerBuilder(3));
-
-// When writing on Twitter, he is known for almost always capitalizing every word.
-
-String.prototype.toJadenCase = function () {
-	function bigFirstLetter(str) {
-		return str.charAt(0).toUpperCase() + str.slice(1);
-	}
-	return this.split(' ').map(bigFirstLetter).join(' ');
-};
-
-console.log('asd fhf kxk'.toJadenCase());
-
-
+console.log(updateLight('red'));
