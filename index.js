@@ -605,12 +605,12 @@ console.log(makeNegative(0));*/
 
 // The goal is to create a function of two inputs number and power, that "raises" ...
 
-function numberToPower(number, power){
+function numberToPower(number, power) {
 	console.info(Math.log2(1024));
 	// Code here
 	let a = 1;
 	for (let i = 0; i < power; i++) {
-		 a *= number;
+		a *= number;
 	}
 	console.log(a);
 }
@@ -622,7 +622,7 @@ numberToPower(10, 6);
 
 const wordsArr = ['to', 'be', 'or', 'not', 'to', 'be'];
 
-function smash (words) {
+function smash(words) {
 	return words.join(' ').trim();
 };
 
@@ -631,13 +631,41 @@ console.log(smash(wordsArr));
 //You're writing code to control your town's traffic lights..
 
 function updateLight(current) {
-	if(current === 'red') {
+	if (current === 'red') {
 		return 'green';
-	} else if(current === 'green') {
+	} else if (current === 'green') {
 		return 'yellow';
-	} else if(current === 'yellow' || 'green') {
+	} else if (current === 'yellow' || 'green') {
 		return 'red';
 	}
 }
 
 console.log(updateLight('red'));
+
+//Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord(bool) {
+	//...
+	return bool ? 'Yes' : 'No';
+
+}
+console.log(boolToWord(true));
+
+//Volume of a Cuboid
+class Kata {
+	static getVolumeOfCuboid(length, width, height) {
+		// your code here
+		let v = length * width * height;
+		return v;
+	}
+}
+
+console.log(Kata.getVolumeOfCuboid(8, 10, 2));
+
+//Remove exclamation marks
+
+function removeExclamationMarks(s) {
+	return s.replaceAll('!', '');
+}
+
+console.log(removeExclamationMarks('hsbvisbv! jdvnsojdvn nojn!'));
