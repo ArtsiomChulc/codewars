@@ -669,3 +669,72 @@ function removeExclamationMarks(s) {
 }
 
 console.log(removeExclamationMarks('hsbvisbv! jdvnsojdvn nojn!'));
+
+//String repeat
+
+const string = 'foo';
+
+function repeatStr(n, s) {
+	let newString = '';
+	for (let i = 0; i < n; i++) {
+		newString += s;
+	}
+	return newString;
+}
+
+console.log(repeatStr(5, string));
+
+//Counting sheep...
+
+const arrSheep = [true, true, true, false,
+	true, true, true, true,
+	true, false, true, false,
+	true, false, false, true,
+	true, true, true, true,
+	false, false, true, true];
+
+function countSheeps(arrayOfSheep) {
+	// TODO May the force be with you
+	let count = 0;
+	for (let i = 0; i < arrayOfSheep.length; i++) {
+		if (arrayOfSheep[i] === true) {
+			count++;
+		}
+	}
+	return count++;
+}
+
+console.log(countSheeps(arrSheep));
+
+//ASCII Total
+
+const strA = 'Mary Had A Little Lamb';
+
+function uniTotal(string) {
+	// total up dem unicodes!
+	let count = 0;
+
+	for (let i = 0; i < string.length; i++) {
+		count += string.charCodeAt(i);
+	}
+	return count;
+}
+
+console.log(uniTotal(strA));
+
+//Square(n) Sum
+
+const arrNum = [];
+
+function squareSum(numbers) {
+	let res = [];
+	if (numbers.length === 0) {
+		return 0;
+	}
+	for (let i = 0; i < numbers.length; i++) {
+		res.push(numbers[i] * numbers[i]);
+	}
+	return res.reduce((a, b) => a + b);
+}
+
+console.log(squareSum(arrNum));
