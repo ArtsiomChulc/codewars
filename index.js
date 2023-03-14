@@ -738,3 +738,37 @@ function squareSum(numbers) {
 }
 
 console.log(squareSum(arrNum));
+
+//Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+	// Implement me
+	if (name[0] === 'R' || name[0] === 'r') {
+		return `${name} plays banjo`;
+	} else {
+		return `${name} does not play banjo`;
+	}
+}
+console.log(areYouPlayingBanjo('Rame'));
+
+//Be Concise I - The Ternary Operator
+
+// function describeAge(age) {
+// 	if (age <= 12) {
+// 		return "You're a(n) kid";
+// 	} else if (age >= 13 && age <= 17) {
+// 		return "You're a(n) teenager";
+// 	} else if (age >= 18 && age <= 64) {
+// 		return "You're a(n) adult";
+// 	} else {
+// 		return "You're a(n) elderly";
+// 	}
+// }
+function describeAge(age) {
+	let s = "You're a(n) ";
+	return age < 13 ? `${s}kid`
+		: age < 18 ? `${s}teenager`
+			: age < 65 ? `${s}adult`
+				: `${s}elderly`;
+}
+console.log(describeAge(12));
